@@ -33,12 +33,14 @@ f.close()
 def vote(driver):
     url = "http://www.jjhuddle.com/forums/forum/high-school-sports-talk/everything-else/1205764-jjhuddle-bucknuts-week-6-ohio-hs-boys-swimming-team-of-the-week-vote-now"
     url = "http://www.jjhuddle.com/forums/forum/high-school-sports-talk/everything-else/1210542-jjhuddle-bucknuts-week-9-ohio-hs-boys-swimming-athlete-of-the-week-vote-now"
+    url = "http://www.jjhuddle.com/forums/forum/high-school-sports-talk/everything-else/1210541-jjhuddle-bucknuts-week-9-ohio-hs-boys-swimming-team-of-the-week-vote-now"
     driver.get(url)
     driver.execute_script("window.scrollTo(0, 100)")
 
     # Find Link
     xpath = "/html/body/div[3]/div[1]/div[4]/div[1]/div/div[2]/div[2]/div[1]/div[3]/div[1]/div[3]/ul/li/div/div[2]/div/div[2]/form/ul/li[2]/label/input"
     xpath = "/html/body/div[3]/div[1]/div[4]/div[1]/div/div[2]/div[2]/div[1]/div[3]/div[1]/div[3]/ul/li/div/div[2]/div/div[2]/form/ul/li[2]/label/input"
+    xpath = "/html/body/div[3]/div[1]/div[4]/div[1]/div/div[2]/div[2]/div[1]/div[3]/div[1]/div[3]/ul/li/div/div[2]/div/div[2]/form/ul/li[4]/label/input"
     radio_button = driver.find_element_by_xpath(xpath).click()
 
     question_xpath = "/html/body/div[3]/div[1]/div[4]/div[1]/div/div[2]/div[2]/div[1]/div[3]/div[1]/div[3]/ul/li/div/div[2]/div/div[2]/div[4]/div/p"
