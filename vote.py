@@ -31,7 +31,7 @@ f.close()
 
 
 def vote(driver):
-    url = "http://www.jjhuddle.com/forums/forum/high-school-sports-talk/lacrosse/1223796-jjhuddle-bucknuts-week-2-ohio-hs-boys-lacrosse-athlete-of-the-week-vote-now"
+    url = "http://www.jjhuddle.com/forums/forum/high-school-sports-talk/lacrosse/1224805-jjhuddle-bucknuts-week-3-ohio-hs-boys-lacrosse-athlete-of-the-week-vote-now"
     driver.get(url)
     driver.execute_script("window.scrollTo(0, 100)")
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     display = Display(visible=0, size=(800, 600))
     display.start()
     successes = 0
-    for ind in xrange(5000):
+    for ind in xrange(50000):
         driver = webdriver.Firefox()
         driver.set_page_load_timeout(30)
         try:
